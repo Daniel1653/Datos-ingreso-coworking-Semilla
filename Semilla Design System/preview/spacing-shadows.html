@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Spacing" name="Shadows & Radii" subtitle="Shadow system (sm/md/lg/card) and border radius tokens" viewport="700x150" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fbf3e7; padding: 24px; font-family: 'Helvetica Neue', sans-serif; }
+  .sections { display: flex; gap: 40px; }
+  .section-title { font-size: 9px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4a4f31; margin-bottom: 14px; }
+
+  /* Shadows */
+  .shadow-row { display: flex; gap: 16px; margin-bottom: 16px; }
+  .shadow-demo { width: 100px; height: 52px; background: #fff; display: flex; align-items: flex-end; padding: 6px 8px; }
+  .shadow-label { font-size: 9px; color: #737373; font-family: monospace; }
+
+  /* Radii */
+  .radius-row { display: flex; gap: 12px; align-items: flex-end; }
+  .radius-demo { background: #10312b; height: 48px; width: 56px; }
+  .radius-info { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .r-label { font-size: 9px; color: #10312b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  .r-val { font-size: 9px; color: #c8a977; font-family: monospace; }
+</style>
+</head>
+<body>
+  <div class="sections">
+    <div>
+      <div class="section-title">Shadows</div>
+      <div class="shadow-row">
+        <div>
+          <div class="shadow-demo" style="box-shadow: 0 1px 3px rgba(16,49,43,0.08); border-radius:4px;">
+            <div class="shadow-label">sm</div>
+          </div>
+        </div>
+        <div>
+          <div class="shadow-demo" style="box-shadow: 0 4px 16px rgba(16,49,43,0.10); border-radius:4px;">
+            <div class="shadow-label">md</div>
+          </div>
+        </div>
+        <div>
+          <div class="shadow-demo" style="box-shadow: 0 8px 32px rgba(16,49,43,0.14); border-radius:4px;">
+            <div class="shadow-label">lg</div>
+          </div>
+        </div>
+        <div>
+          <div class="shadow-demo" style="box-shadow: 0 2px 12px rgba(16,49,43,0.08); border-radius:4px;">
+            <div class="shadow-label">card</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">Border Radius</div>
+      <div class="radius-row">
+        <div class="radius-info"><div class="radius-demo" style="border-radius:0;"></div><div class="r-label">none</div><div class="r-val">0</div></div>
+        <div class="radius-info"><div class="radius-demo" style="border-radius:4px;"></div><div class="r-label">sm</div><div class="r-val">4px</div></div>
+        <div class="radius-info"><div class="radius-demo" style="border-radius:8px;"></div><div class="r-label">md</div><div class="r-val">8px</div></div>
+        <div class="radius-info"><div class="radius-demo" style="border-radius:16px;"></div><div class="r-label">lg</div><div class="r-val">16px</div></div>
+        <div class="radius-info"><div class="radius-demo" style="border-radius:9999px; width:48px;"></div><div class="r-label">full</div><div class="r-val">pill</div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

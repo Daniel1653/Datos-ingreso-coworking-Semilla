@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80">
+  <defs>
+    
+  </defs>
+  <path class="v" stroke-width="1.2" d="M15,75 Q10,65 15,55 Q20,45 15,35 Q10,25 15,15"></path>
+  <path class="v" stroke-width="1" d="M30,78 Q25,68 30,58 Q35,48 30,38 Q25,28 30,18 Q33,10 30,2"></path>
+  <path class="v" stroke-width="0.9" d="M45,74 Q40,64 45,54 Q50,44 45,34 Q40,24 45,14"></path>
+</svg>

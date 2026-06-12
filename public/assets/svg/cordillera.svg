@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1056 280" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="hazeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10312B" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#10312B" stop-opacity="0.15"></stop>
+    </linearGradient>
+    <linearGradient id="farGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c453e" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#10312B" stop-opacity="0.38"></stop>
+    </linearGradient>
+    <linearGradient id="midGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#143830" stop-opacity="0.45"></stop>
+      <stop offset="100%" stop-color="#10312B" stop-opacity="0.65"></stop>
+    </linearGradient>
+    <linearGradient id="nearGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f2e28" stop-opacity="0.75"></stop>
+      <stop offset="100%" stop-color="#0a2520" stop-opacity="0.90"></stop>
+    </linearGradient>
+    <linearGradient id="fgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#081e1a" stop-opacity="0.96"></stop>
+      <stop offset="100%" stop-color="#040f0d" stop-opacity="1"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <rect x="0" y="0" width="1056" height="280" fill="url(#hazeGrad)"></rect>
+
+  
+  <path d="M0,280 L0,195&#xA;    Q50,182 105,188 Q160,194 210,172&#xA;    Q260,150 315,162 Q370,174 420,155&#xA;    Q470,136 525,148 Q580,160 630,143&#xA;    Q680,126 735,138 Q790,150 840,133&#xA;    Q890,116 945,130 Q1000,144 1056,128&#xA;    L1056,280 Z" fill="url(#farGrad)"></path>
+
+  
+  <path d="M0,280 L0,222&#xA;    Q40,210 82,215 Q128,220 172,198&#xA;    Q212,178 258,194 Q304,210 348,188&#xA;    Q388,168 432,185 Q478,202 522,178&#xA;    Q562,156 608,172 Q655,190 698,168&#xA;    Q738,148 782,165 Q828,184 870,162&#xA;    Q910,142 955,160 Q1002,178 1056,158&#xA;    L1056,280 Z" fill="url(#midGrad)"></path>
+
+  
+  
+  <path d="M0,280 L0,248&#xA;    Q28,238 58,243 Q90,248 122,228&#xA;    Q150,212 180,228 Q212,246 244,222&#xA;    Q272,202 302,220 Q334,240 366,215&#xA;    Q394,194 424,214 Q456,236 490,210&#xA;    Q518,188 548,208 Q580,230 614,205&#xA;    Q642,184 672,204 Q704,226 738,202&#xA;    Q766,182 796,202 Q828,224 862,200&#xA;    Q890,180 920,200 Q952,222 986,200&#xA;    Q1014,182 1040,198 Q1050,204 1056,202&#xA;    L1056,280 Z" fill="url(#nearGrad)"></path>
+
+  
+  <path d="M0,280 L0,265&#xA;    Q18,258 38,262 Q62,266 88,252&#xA;    Q110,240 135,256 Q162,272 190,248&#xA;    Q214,228 240,248 Q268,270 298,246&#xA;    Q322,226 350,246 Q380,268 410,244&#xA;    Q432,226 458,246 Q486,268 516,242&#xA;    Q540,222 568,242 Q598,264 628,240&#xA;    Q652,220 680,240 Q710,262 740,238&#xA;    Q764,218 792,238 Q822,260 852,236&#xA;    Q876,216 904,236 Q934,258 964,234&#xA;    Q988,214 1016,234 Q1038,250 1056,242&#xA;    L1056,280 Z" fill="url(#fgGrad)"></path>
+
+  
+  
+  <g fill="rgba(0,0,0,0.4)">
+    
+    <ellipse cx="30" cy="258" rx="10" ry="7"></ellipse>
+    <ellipse cx="55" cy="255" rx="8" ry="6"></ellipse>
+    <ellipse cx="78" cy="252" rx="9" ry="6"></ellipse>
+    <ellipse cx="102" cy="256" rx="7" ry="5"></ellipse>
+    <ellipse cx="125" cy="252" rx="10" ry="7"></ellipse>
+    <ellipse cx="152" cy="258" rx="8" ry="6"></ellipse>
+    <ellipse cx="175" cy="252" rx="9" ry="7"></ellipse>
+    <ellipse cx="200" cy="249" rx="10" ry="7"></ellipse>
+    <ellipse cx="226" cy="252" rx="8" ry="6"></ellipse>
+    <ellipse cx="250" cy="250" rx="11" ry="7"></ellipse>
+    <ellipse cx="278" cy="248" rx="9" ry="6"></ellipse>
+    <ellipse cx="305" cy="252" rx="8" ry="6"></ellipse>
+    <ellipse cx="330" cy="248" rx="10" ry="7"></ellipse>
+    <ellipse cx="358" cy="252" rx="9" ry="6"></ellipse>
+    <ellipse cx="382" cy="248" rx="8" ry="6"></ellipse>
+    <ellipse cx="408" cy="250" rx="10" ry="7"></ellipse>
+    <ellipse cx="435" cy="248" rx="9" ry="6"></ellipse>
+    <ellipse cx="460" cy="245" rx="11" ry="7"></ellipse>
+    <ellipse cx="488" cy="248" rx="8" ry="6"></ellipse>
+    <ellipse cx="514" cy="244" rx="10" ry="7"></ellipse>
+    <ellipse cx="540" cy="246" rx="9" ry="6"></ellipse>
+    <ellipse cx="566" cy="244" rx="8" ry="6"></ellipse>
+    <ellipse cx="592" cy="242" rx="10" ry="7"></ellipse>
+    <ellipse cx="618" cy="244" rx="9" ry="6"></ellipse>
+    <ellipse cx="645" cy="242" rx="8" ry="5"></ellipse>
+    <ellipse cx="670" cy="240" rx="10" ry="7"></ellipse>
+    <ellipse cx="698" cy="244" rx="9" ry="6"></ellipse>
+    <ellipse cx="724" cy="240" rx="8" ry="6"></ellipse>
+    <ellipse cx="750" cy="242" rx="10" ry="7"></ellipse>
+    <ellipse cx="778" cy="240" rx="9" ry="6"></ellipse>
+    <ellipse cx="804" cy="238" rx="8" ry="6"></ellipse>
+    <ellipse cx="830" cy="240" rx="10" ry="7"></ellipse>
+    <ellipse cx="858" cy="238" rx="9" ry="6"></ellipse>
+    <ellipse cx="884" cy="236" rx="8" ry="5"></ellipse>
+    <ellipse cx="910" cy="238" rx="10" ry="7"></ellipse>
+    <ellipse cx="938" cy="236" rx="9" ry="6"></ellipse>
+    <ellipse cx="964" cy="234" rx="8" ry="6"></ellipse>
+    <ellipse cx="990" cy="236" rx="10" ry="7"></ellipse>
+    <ellipse cx="1018" cy="238" rx="9" ry="6"></ellipse>
+    <ellipse cx="1044" cy="240" rx="8" ry="5"></ellipse>
+  </g>
+
+  
+  <ellipse cx="200" cy="210" rx="90" ry="5" fill="rgba(251,244,232,0.07)"></ellipse>
+  <ellipse cx="480" cy="196" rx="110" ry="6" fill="rgba(251,244,232,0.08)"></ellipse>
+  <ellipse cx="760" cy="205" rx="95" ry="5" fill="rgba(251,244,232,0.07)"></ellipse>
+  <ellipse cx="980" cy="198" rx="75" ry="4" fill="rgba(251,244,232,0.06)"></ellipse>
+  <ellipse cx="340" cy="220" rx="80" ry="4" fill="rgba(251,244,232,0.05)"></ellipse>
+  <ellipse cx="620" cy="214" rx="85" ry="5" fill="rgba(251,244,232,0.06)"></ellipse>
+</svg>

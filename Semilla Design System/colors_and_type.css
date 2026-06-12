@@ -1,0 +1,238 @@
+/* ============================================================
+   SEMILLA CAFÉ & COWORKING — Design System
+   colors_and_type.css
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   FONTS
+   ---------------------------------------------------------- */
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-Thin.otf'); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-Light.otf'); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-SemiLight.otf'); font-weight: 350; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-Regular.otf'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-Medium.otf'); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-SemiBold.otf'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-Bold.otf'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-Black.otf'); font-weight: 900; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-ExtraBlack.otf'); font-weight: 950; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-Italic.otf'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-LightItalic.otf'); font-weight: 300; font-style: italic; }
+@font-face { font-family: 'Betm'; src: url('fonts/Betm-BoldItalic.otf'); font-weight: 700; font-style: italic; }
+
+/* ----------------------------------------------------------
+   COLOR TOKENS — PRIMITIVES
+   ---------------------------------------------------------- */
+:root {
+  /* Forest Green — primary brand dark */
+  --color-forest-900:  #081a16;
+  --color-forest-800:  #102621;   /* brand canonical */
+  --color-forest-700:  #163530;
+  --color-forest-600:  #1c453e;
+  --color-forest-400:  #357a6e;
+  --color-forest-200:  #a0ccc6;
+  --color-forest-100:  #d2e9e6;
+
+  /* Olive — secondary brand green */
+  --color-olive-900:   #2e2f15;
+  --color-olive-800:   #3c3e20;
+  --color-olive-700:   #4e502a;   /* brand canonical */
+  --color-olive-500:   #6e7140;
+  --color-olive-300:   #aaad80;
+  --color-olive-100:   #dcdec8;
+
+  /* Gold — accent warmth */
+  --color-gold-900:    #6e5227;
+  --color-gold-700:    #967535;
+  --color-gold-500:    #c09762;   /* brand canonical */
+  --color-gold-300:    #d9be96;
+  --color-gold-100:    #f0e4cc;
+
+  /* Cream — background/surface */
+  --color-cream-900:   #bfad95;
+  --color-cream-700:   #d6c4a8;
+  --color-cream-500:   #eadcc4;
+  --color-cream-300:   #f3e8d2;
+  --color-cream-100:   #fbf0e0;   /* brand canonical */
+  --color-cream-50:    #fdf8f0;
+
+  /* Neutrals */
+  --color-black:       #0a0a0a;
+  --color-white:       #ffffff;
+  --color-gray-900:    #1a1a1a;
+  --color-gray-700:    #3d3d3d;
+  --color-gray-500:    #737373;
+  --color-gray-300:    #b8b8b8;
+  --color-gray-100:    #f0f0f0;
+
+  /* ----------------------------------------------------------
+     SEMANTIC COLOR TOKENS
+     ---------------------------------------------------------- */
+  --bg-base:           var(--color-cream-100);   /* #fbf0e0 */
+  --bg-surface:        var(--color-white);
+  --bg-surface-alt:    var(--color-cream-50);
+  --bg-dark:           var(--color-forest-800);  /* #102621 */
+  --bg-dark-alt:       var(--color-olive-700);   /* #4e502a */
+  --bg-accent:         var(--color-gold-500);    /* #c09762 */
+
+  --fg-primary:        var(--color-forest-800);
+  --fg-secondary:      var(--color-olive-700);
+  --fg-muted:          var(--color-gray-500);
+  --fg-on-dark:        var(--color-white);
+  --fg-on-cream:       var(--color-forest-800);
+  --fg-on-gold:        var(--color-white);
+  --fg-accent:         var(--color-gold-500);
+
+  --border-default:    var(--color-forest-800);
+  --border-light:      var(--color-cream-700);
+  --border-muted:      var(--color-cream-500);
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY TOKENS
+     ---------------------------------------------------------- */
+  --font-sans:         'Betm', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display:      'Betm', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Scale */
+  --text-xs:    0.6875rem;   /* 11px — "MED COL" taglet */
+  --text-sm:    0.75rem;     /* 12px */
+  --text-base:  0.9375rem;   /* 15px — body */
+  --text-md:    1.125rem;    /* 18px */
+  --text-lg:    1.375rem;    /* 22px */
+  --text-xl:    1.75rem;     /* 28px */
+  --text-2xl:   2.25rem;     /* 36px */
+  --text-3xl:   3rem;        /* 48px */
+  --text-4xl:   4rem;        /* 64px */
+  --text-display: 6rem;      /* 96px */
+
+  /* Weights */
+  --weight-thin:       100;
+  --weight-light:      300;
+  --weight-regular:    400;
+  --weight-medium:     500;
+  --weight-semibold:   600;
+  --weight-bold:       700;
+  --weight-black:      900;
+  --weight-extrablack: 950;
+
+  /* Letter spacing */
+  --tracking-tight:   -0.02em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.08em;
+  --tracking-wider:    0.14em;
+  --tracking-widest:   0.22em;   /* SEMILLA brand wordmark */
+
+  /* Line heights */
+  --leading-tight:    1.1;
+  --leading-snug:     1.25;
+  --leading-normal:   1.5;
+  --leading-relaxed:  1.7;
+
+  /* ----------------------------------------------------------
+     SPACING TOKENS
+     ---------------------------------------------------------- */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* ----------------------------------------------------------
+     BORDER RADIUS
+     ---------------------------------------------------------- */
+  --radius-none:  0;
+  --radius-sm:    4px;
+  --radius-md:    8px;
+  --radius-lg:    16px;
+  --radius-xl:    24px;
+  --radius-full:  9999px;
+
+  /* ----------------------------------------------------------
+     SHADOWS
+     ---------------------------------------------------------- */
+  --shadow-sm:   0 1px 3px rgba(16,49,43,0.08);
+  --shadow-md:   0 4px 16px rgba(16,49,43,0.10);
+  --shadow-lg:   0 8px 32px rgba(16,49,43,0.14);
+  --shadow-card: 0 2px 12px rgba(16,49,43,0.08);
+}
+
+/* ----------------------------------------------------------
+   SEMANTIC TYPE STYLES
+   ---------------------------------------------------------- */
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-3xl);
+  letter-spacing: var(--tracking-widest);
+  line-height: var(--leading-tight);
+  text-transform: uppercase;
+  color: var(--fg-primary);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xl);
+  letter-spacing: var(--tracking-wider);
+  line-height: var(--leading-snug);
+  text-transform: uppercase;
+  color: var(--fg-primary);
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-xl);
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-snug);
+  color: var(--fg-primary);
+}
+
+h4, .h4 {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-lg);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-primary);
+}
+
+p, .body {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--fg-primary);
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.tagline {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+}
+
+.caption {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--fg-muted);
+}

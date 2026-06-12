@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    
+  </defs>
+  
+  <g transform="translate(20,25) rotate(-25,16,20)">
+    <ellipse class="g" cx="16" cy="20" rx="11" ry="15"></ellipse>
+    <path class="gs" d="M16,7 Q16,14 16,20 Q16,26 16,33" stroke-width="1"></path>
+  </g>
+  
+  <g transform="translate(72,10) rotate(40,10,13)">
+    <ellipse class="g" cx="10" cy="13" rx="7" ry="10"></ellipse>
+    <path class="gs" d="M10,4 Q10,9 10,13 Q10,17 10,22" stroke-width="0.8"></path>
+  </g>
+  
+  <g transform="translate(50,75) rotate(-55,12,17)">
+    <ellipse class="g" cx="12" cy="17" rx="9" ry="13"></ellipse>
+    <path class="gs" d="M12,5 Q12,11 12,17 Q12,23 12,29" stroke-width="0.9"></path>
+  </g>
+  
+  <g transform="translate(5,65)" opacity="0.15">
+    <path d="M0,35 Q15,20 30,10 Q45,0 60,5" fill="none" stroke="#C8A977" stroke-width="1.2"></path>
+    <circle cx="30" cy="10" r="4" fill="#C8A977"></circle>
+    <circle cx="45" cy="3" r="3.5" fill="#C8A977"></circle>
+    <circle cx="18" cy="20" r="3" fill="#C8A977"></circle>
+    <circle cx="56" cy="6" r="3" fill="#C8A977"></circle>
+  </g>
+</svg>

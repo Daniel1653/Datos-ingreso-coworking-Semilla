@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-Thin.otf') format('opentype'); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-Light.otf') format('opentype'); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-SemiLight.otf') format('opentype'); font-weight: 350; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-SemiBold.otf') format('opentype'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-Black.otf') format('opentype'); font-weight: 900; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-ExtraBlack.otf') format('opentype'); font-weight: 950; font-style: normal; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-Italic.otf') format('opentype'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-LightItalic.otf') format('opentype'); font-weight: 300; font-style: italic; }
+@font-face { font-family: 'Betm'; src: url('/fonts/Betm-BoldItalic.otf') format('opentype'); font-weight: 700; font-style: italic; }
+
+@layer base {
+  body {
+    @apply bg-brand-cream-100 text-brand-forest-800 font-sans antialiased selection:bg-brand-gold-500 selection:text-white;
+  }
+  
+  h1, .h1 {
+    @apply font-display font-[900] text-3xl tracking-widest uppercase text-brand-forest-800 leading-tight;
+  }
+  
+  h2, .h2 {
+    @apply font-display font-bold text-2xl tracking-wider uppercase text-brand-forest-800 leading-snug;
+  }
+  
+  h3, .h3 {
+    @apply font-display font-semibold text-xl tracking-wide text-brand-forest-800 leading-snug;
+  }
+
+  p, .body {
+    @apply font-sans font-light text-base leading-relaxed text-brand-forest-800;
+  }
+}

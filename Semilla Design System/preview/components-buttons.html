@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Buttons" subtitle="Button system — solid, outline, ghost, sizes, pill variants" viewport="700x220" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-SemiBold.otf'); font-weight: 600; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-Medium.otf'); font-weight: 500; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-Light.otf'); font-weight: 300; }
+  body { background: #fbf3e7; padding: 24px 28px; font-family: 'Betm', sans-serif; }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+  .row:last-child { margin-bottom: 0; }
+  .row-label { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: #a8a8a8; width: 56px; flex-shrink: 0; }
+  button {
+    font-family: 'Betm', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  button:hover { opacity: 0.75; }
+  .btn-primary { background: #10312b; color: #fff; }
+  .btn-gold { background: #c8a977; color: #fff; }
+  .btn-olive { background: #4a4f31; color: #fbf3e7; }
+  .btn-outline { background: transparent; color: #10312b; border: 1.5px solid #10312b; }
+  .btn-outline-gold { background: transparent; color: #c8a977; border: 1.5px solid #c8a977; }
+  .btn-ghost { background: transparent; color: #10312b; border: none; text-decoration: underline; text-underline-offset: 3px; }
+  .btn-sm { font-size: 10px; padding: 8px 18px; letter-spacing: 0.14em; }
+  .btn-lg { font-size: 12px; padding: 16px 40px; letter-spacing: 0.22em; }
+  .btn-pill { border-radius: 9999px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="row-label">Solid</div>
+    <button class="btn-primary">Reserve Spot</button>
+    <button class="btn-gold">Join Now</button>
+    <button class="btn-olive">Explore Plans</button>
+  </div>
+  <div class="row">
+    <div class="row-label">Outline</div>
+    <button class="btn-outline">Learn More</button>
+    <button class="btn-outline-gold">View Menu</button>
+    <button class="btn-ghost">See Events →</button>
+  </div>
+  <div class="row">
+    <div class="row-label">Sizes</div>
+    <button class="btn-primary btn-sm">Small</button>
+    <button class="btn-primary">Default</button>
+    <button class="btn-primary btn-lg">Large</button>
+  </div>
+  <div class="row">
+    <div class="row-label">Pill</div>
+    <button class="btn-primary btn-pill">Become a Member</button>
+    <button class="btn-outline btn-pill">Get a Tour</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Color Scales" subtitle="Forest, Olive, Gold, Cream — full tint/shade scales, ★ = brand canonical" viewport="700x260" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #fbf0e0; padding: 20px 24px; }
+  .scale { display: flex; gap: 0; margin-bottom: 8px; align-items: stretch; height: 52px; }
+  .label-col { width: 52px; font-size: 9px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #4e502a; display: flex; align-items: center; flex-shrink: 0; }
+  .step { flex: 1; position: relative; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 4px; }
+  .step.canonical::after {
+    content: '●';
+    position: absolute; top: 4px; left: 50%; transform: translateX(-50%);
+    font-size: 5px; color: rgba(255,255,255,0.8);
+  }
+  .step.canonical-dark::after {
+    content: '●';
+    position: absolute; top: 4px; left: 50%; transform: translateX(-50%);
+    font-size: 5px; color: rgba(0,0,0,0.3);
+  }
+  .hex { font-size: 7px; font-family: monospace; color: rgba(255,255,255,0.65); letter-spacing: 0.04em; }
+  .hex.dark { color: rgba(0,0,0,0.4); }
+</style>
+</head>
+<body>
+
+  <!-- Forest -->
+  <div class="scale">
+    <div class="label-col">Forest</div>
+    <div class="step" style="background:#040e0c;"><span class="hex">—50</span></div>
+    <div class="step" style="background:#081812;"><span class="hex">100</span></div>
+    <div class="step" style="background:#0c1e18;"><span class="hex">200</span></div>
+    <div class="step canonical" style="background:#102621;"><span class="hex">300 ★</span></div>
+    <div class="step" style="background:#1a3d32;"><span class="hex">400</span></div>
+    <div class="step" style="background:#255549;"><span class="hex">500</span></div>
+    <div class="step" style="background:#4a8c7c;"><span class="hex">600</span></div>
+    <div class="step" style="background:#85bdb3; border:none;"><span class="hex dark">700</span></div>
+    <div class="step" style="background:#c2deda; border:1px solid #a0cbc6;"><span class="hex dark">800</span></div>
+    <div class="step" style="background:#e8f4f2; border:1px solid #c2deda;"><span class="hex dark">900</span></div>
+  </div>
+
+  <!-- Olive -->
+  <div class="scale">
+    <div class="label-col">Olive</div>
+    <div class="step" style="background:#141507;"><span class="hex">—50</span></div>
+    <div class="step" style="background:#22240f;"><span class="hex">100</span></div>
+    <div class="step" style="background:#33361a;"><span class="hex">200</span></div>
+    <div class="step canonical" style="background:#4e502a;"><span class="hex">300 ★</span></div>
+    <div class="step" style="background:#646638;"><span class="hex">400</span></div>
+    <div class="step" style="background:#828558;"><span class="hex">500</span></div>
+    <div class="step" style="background:#a5a880;"><span class="hex dark">600</span></div>
+    <div class="step" style="background:#c4c6a8; border:none;"><span class="hex dark">700</span></div>
+    <div class="step" style="background:#dddecb; border:1px solid #c4c6a8;"><span class="hex dark">800</span></div>
+    <div class="step" style="background:#f0f0e6; border:1px solid #dddecb;"><span class="hex dark">900</span></div>
+  </div>
+
+  <!-- Gold -->
+  <div class="scale">
+    <div class="label-col">Gold</div>
+    <div class="step" style="background:#3a2c10;"><span class="hex">—50</span></div>
+    <div class="step" style="background:#5a4418;"><span class="hex">100</span></div>
+    <div class="step" style="background:#7d5f22;"><span class="hex">200</span></div>
+    <div class="step" style="background:#a07a3a;"><span class="hex">300</span></div>
+    <div class="step canonical" style="background:#c09762;"><span class="hex">400 ★</span></div>
+    <div class="step" style="background:#cfab80;"><span class="hex dark">500</span></div>
+    <div class="step" style="background:#dbbf9a; border:none;"><span class="hex dark">600</span></div>
+    <div class="step" style="background:#e6d1b4; border:1px solid #cfab80;"><span class="hex dark">700</span></div>
+    <div class="step" style="background:#f0e4ce; border:1px solid #e6d1b4;"><span class="hex dark">800</span></div>
+    <div class="step" style="background:#f8f1e4; border:1px solid #e6d1b4;"><span class="hex dark">900</span></div>
+  </div>
+
+  <!-- Cream -->
+  <div class="scale">
+    <div class="label-col">Cream</div>
+    <div class="step" style="background:#8c7a58;"><span class="hex">—50</span></div>
+    <div class="step" style="background:#a89270;"><span class="hex">100</span></div>
+    <div class="step" style="background:#c0ac8c;"><span class="hex">200</span></div>
+    <div class="step" style="background:#d4c2a4;"><span class="hex dark">300</span></div>
+    <div class="step" style="background:#e4d6be; border:1px solid #c0ac8c;"><span class="hex dark">400</span></div>
+    <div class="step" style="background:#f0e8d4; border:1px solid #d4c2a4;"><span class="hex dark">500</span></div>
+    <div class="step" style="background:#f5edde; border:1px solid #d4c2a4;"><span class="hex dark">600</span></div>
+    <div class="step canonical-dark" style="background:#fbf0e0; border:1px solid #d4c2a4;"><span class="hex dark">700 ★</span></div>
+    <div class="step" style="background:#fdf6ee; border:1px solid #e4d6be;"><span class="hex dark">800</span></div>
+    <div class="step" style="background:#ffffff; border:1px solid #e4d6be;"><span class="hex dark">900</span></div>
+  </div>
+
+</body>
+</html>

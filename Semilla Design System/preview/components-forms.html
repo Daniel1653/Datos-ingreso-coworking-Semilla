@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Form Inputs" subtitle="Form inputs — bordered, underline, select" viewport="700x180" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-Light.otf'); font-weight: 300; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-SemiBold.otf'); font-weight: 600; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-Regular.otf'); font-weight: 400; }
+  body { background: #fbf3e7; padding: 24px; font-family: 'Betm', sans-serif; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+  .field { display: flex; flex-direction: column; gap: 5px; }
+  label { font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #4a4f31; }
+  input, select, textarea {
+    font-family: 'Betm', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #10312b;
+    background: #fff;
+    border: 1px solid #10312b;
+    padding: 10px 14px;
+    outline: none;
+    border-radius: 0;
+    appearance: none;
+  }
+  input::placeholder { color: #b8b8b8; }
+  input:focus { border-color: #c8a977; box-shadow: 0 0 0 2px rgba(200,169,119,0.15); }
+  .input-line {
+    border: none; border-bottom: 1px solid #10312b; background: transparent;
+    padding: 8px 0; font-size: 13px; font-weight: 300;
+  }
+  .input-line:focus { border-bottom-color: #c8a977; box-shadow: none; }
+  select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2310312b'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 28px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="field">
+      <label>Full Name</label>
+      <input type="text" placeholder="Your name">
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="hello@semilla.co">
+    </div>
+    <div class="field">
+      <label>Plan</label>
+      <select><option>Flex</option><option>Full</option><option>Office</option></select>
+    </div>
+    <div class="field">
+      <label>Underline Input</label>
+      <input class="input-line" type="text" placeholder="Minimalist style">
+    </div>
+  </div>
+</body>
+</html>

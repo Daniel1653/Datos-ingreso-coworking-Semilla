@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Cards" subtitle="Plan cards (dark/gold/light) and content info card" viewport="700x200" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-Black.otf'); font-weight: 900; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-SemiBold.otf'); font-weight: 600; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-Medium.otf'); font-weight: 500; }
+  @font-face { font-family: 'Betm'; src: url('../fonts/Betm-Light.otf'); font-weight: 300; }
+  body { background: #f0ece4; padding: 20px; font-family: 'Betm', sans-serif; }
+  .row { display: flex; gap: 12px; }
+  /* Plan card */
+  .plan-card { background: #10312b; color: #fff; padding: 24px 22px; flex: 1; }
+  .plan-card.alt { background: #fbf3e7; color: #10312b; }
+  .plan-card.gold { background: #c8a977; color: #fff; }
+  .plan-tag { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.6; margin-bottom: 8px; }
+  .plan-name { font-size: 18px; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px; }
+  .plan-price { font-size: 26px; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 12px; }
+  .plan-price span { font-size: 13px; font-weight: 300; opacity: 0.7; letter-spacing: 0.06em; }
+  .plan-feature { font-size: 11px; font-weight: 300; opacity: 0.8; margin-bottom: 4px; letter-spacing: 0.04em; }
+  /* Info card */
+  .info-card { background: #fff; border: 1px solid #ede0c8; padding: 20px 18px; flex: 1.4; }
+  .info-label { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: #c8a977; margin-bottom: 8px; }
+  .info-title { font-size: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #10312b; margin-bottom: 8px; line-height: 1.2; }
+  .info-body { font-size: 12px; font-weight: 300; color: #4a4f31; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="plan-card">
+      <div class="plan-tag">Plan</div>
+      <div class="plan-name">Flex</div>
+      <div class="plan-price">$89<span>/mo</span></div>
+      <div class="plan-feature">Hot desk access</div>
+      <div class="plan-feature">Coffee included</div>
+      <div class="plan-feature">Community events</div>
+    </div>
+    <div class="plan-card gold">
+      <div class="plan-tag">Most Popular</div>
+      <div class="plan-name">Full</div>
+      <div class="plan-price">$149<span>/mo</span></div>
+      <div class="plan-feature">Dedicated desk</div>
+      <div class="plan-feature">All-day access</div>
+      <div class="plan-feature">Priority booking</div>
+    </div>
+    <div class="plan-card alt">
+      <div class="plan-tag">Plan</div>
+      <div class="plan-name">Office</div>
+      <div class="plan-price">$299<span>/mo</span></div>
+      <div class="plan-feature">Private office</div>
+      <div class="plan-feature">Mail address</div>
+      <div class="plan-feature">Meeting hours</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">Events</div>
+      <div class="info-title">Networking Brunch — Abril 2026</div>
+      <div class="info-body">Join fellow Change Makers for an informal breakfast. Ideas, coffee, and real conversations. Laureles, Medellín.</div>
+    </div>
+  </div>
+</body>
+</html>
