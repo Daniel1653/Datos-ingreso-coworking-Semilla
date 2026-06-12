@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { 
   Check, 
   Copy, 
@@ -32,9 +32,6 @@ function App() {
   const [screen, setScreen] = useState('register')
   const [transitioning, setTransitioning] = useState(false)
   
-  // Google Sheets endpoint state loaded dynamically at runtime
-  const [gsheetsEndpoint, setGsheetsEndpoint] = useState('')
-
   // Form State
   const [formData, setFormData] = useState({
     name: '',
@@ -50,21 +47,6 @@ function App() {
     wifiSsid: false,
     wifiPass: false
   })
-
-  // Load config.json on mount
-  useEffect(() => {
-    fetch('/config.json')
-      .then(res => {
-        if (!res.ok) throw new Error('config.json not found');
-        return res.json();
-      })
-      .then(data => {
-        setGsheetsEndpoint(data.VITE_GSHEETS_URL || '');
-      })
-      .catch(err => {
-        console.warn('Running without dynamic config.json fallback:', err);
-      });
-  }, [])
 
   // Smooth screen transition helper
   const navigateTo = (newScreen) => {
@@ -100,26 +82,20 @@ function App() {
     return Object.keys(newErrors).length === 0
   }
 
-  // Core Sync Function to Google Sheets
+  // Core Sync Function to Google Sheets via Netlify Backend Proxy Function
   const syncToGoogleSheets = async (logEntry) => {
-    if (!gsheetsEndpoint) {
-      console.warn('Google Sheets URL is not configured. Log saved locally only.');
-      return;
-    }
-
     try {
-      // Send as text/plain to avoid CORS preflight OPTIONS request on Apps Script
-      await fetch(gsheetsEndpoint, {
+      // Direct POST to local Netlify Serverless Function (hides Google Sheets URL from client)
+      await fetch('/.netlify/functions/ingress', {
         method: 'POST',
-        mode: 'cors',
         headers: {
-          'Content-Type': 'text/plain;charset=utf-8'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify(logEntry)
       });
-      console.log('Log successfully synced to Google Sheets.');
+      console.log('Log successfully forwarded to secure serverless proxy.');
     } catch (err) {
-      console.error('Failed to sync log to Google Sheets:', err);
+      console.error('Failed to forward log to secure serverless proxy:', err);
     }
   }
 
